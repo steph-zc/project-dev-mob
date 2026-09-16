@@ -10,4 +10,5 @@
     <string name="password">Senha</string>
     <string name="account_created">Conta criada!</string>
     <string name="fill_fields">Preencha email e senha</string>
+    <string name="hello_user">Olá, %1$s!</string>
 </resources>
