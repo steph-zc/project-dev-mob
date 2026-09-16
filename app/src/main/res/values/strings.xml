@@ -3,4 +3,11 @@
     <string name="welcome">Bem-vindo!</string>
     <string name="login">Login</string>
     <string name="register">Registrar</string>
+    <string name="back">Voltar</string>
+    <string name="create_account">Criar conta</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="account_created">Conta criada!</string>
+    <string name="fill_fields">Preencha email e senha</string>
 </resources>
