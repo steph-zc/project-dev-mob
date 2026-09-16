@@ -1,0 +1,36 @@
+# Gradle
+.gradle
+/build
+/captures
+.externalNativeBuild
+.cxx
+.kotlin
+
+# Android Studio
+*.iml
+/.idea/caches
+/.idea/libraries
+/.idea/shelf
+/.idea/workspace.xml
+/.idea/modules.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/deploymentTargetSelector.xml
+/.idea/deviceManager.xml
+/.idea/androidTestResultsUserPreferences.xml
+/.idea/appInsightsSettings.xml
+/.idea/studiobot.xml
+/.idea/other.xml
+
+# Arquivos locais
+local.properties
+.DS_Store
+
+# Firebase
+app/google-services.json
+
+# Builds e chaves de assinatura
+*.apk
+*.aab
+*.jks
+*.keystore
