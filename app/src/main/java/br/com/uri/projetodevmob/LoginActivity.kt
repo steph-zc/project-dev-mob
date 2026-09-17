@@ -1,5 +1,6 @@
 package br.com.uri.projetodevmob
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -37,13 +38,18 @@ class LoginActivity : AppCompatActivity() {
         }
 
         auth.signInWithEmailAndPassword(email, password)
-            .addOnSuccessListener { result ->
-                val name = result.user?.displayName
-                Toast.makeText(this, getString(R.string.hello_user, name), Toast.LENGTH_SHORT).show()
-                finish()
+            .addOnSuccessListener {
+                openDashboard()
             }
             .addOnFailureListener { error ->
                 Toast.makeText(this, error.message, Toast.LENGTH_LONG).show()
             }
+    }
+
+    private fun openDashboard() {
+        val intent = Intent(this, DashboardActivity::class.java)
+        // limpa a pilha para o voltar não retornar ao login
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
     }
 }

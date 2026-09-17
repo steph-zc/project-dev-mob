@@ -11,4 +11,20 @@
     <string name="account_created">Conta criada!</string>
     <string name="fill_fields">Preencha email e senha</string>
     <string name="hello_user">Olá, %1$s!</string>
+    <string name="did_you_know">Você sabia?</string>
+    <string name="new_fact">Outra curiosidade</string>
+    <string name="logout">Sair</string>
+
+    <string-array name="fun_facts">
+        <item>Polvos têm três corações e sangue azul.</item>
+        <item>O mel nunca estraga. Já encontraram mel comestível em tumbas egípcias.</item>
+        <item>Um dia em Vênus dura mais que um ano em Vênus.</item>
+        <item>As bananas são levemente radioativas.</item>
+        <item>O primeiro bug de computador foi uma mariposa presa em um relé, em 1947.</item>
+        <item>Os flamingos nascem cinzas e ficam rosados por causa da alimentação.</item>
+        <item>A Torre Eiffel fica cerca de 15 cm mais alta no verão.</item>
+        <item>O coração de um camarão fica na cabeça.</item>
+        <item>Existem mais árvores na Terra do que estrelas na Via Láctea.</item>
+        <item>O Android foi criado inicialmente para câmeras digitais.</item>
+    </string-array>
 </resources>

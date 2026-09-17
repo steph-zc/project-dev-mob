@@ -1,5 +1,6 @@
 package br.com.uri.projetodevmob
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -46,12 +47,20 @@ class RegisterActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener { result ->
                 val profile = userProfileChangeRequest { displayName = name }
-                result.user?.updateProfile(profile)
-                Toast.makeText(this, R.string.account_created, Toast.LENGTH_SHORT).show()
-                finish()
+                // espera o nome ser salvo antes de abrir o dashboard
+                result.user?.updateProfile(profile)?.addOnCompleteListener {
+                    Toast.makeText(this, R.string.account_created, Toast.LENGTH_SHORT).show()
+                    openDashboard()
+                }
             }
             .addOnFailureListener { error ->
                 Toast.makeText(this, error.message, Toast.LENGTH_LONG).show()
             }
+    }
+
+    private fun openDashboard() {
+        val intent = Intent(this, DashboardActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
     }
 }
