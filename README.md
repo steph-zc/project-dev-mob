@@ -49,6 +49,12 @@ app/src/main/
 - **Navegação** entre as telas com `Intent`.
 - **Textos** da interface ficam em `strings.xml`, e as curiosidades em um `string-array`.
 
+### Usuários no Firebase
+
+Contas criadas pela tela de Registro, vistas em **Authentication > Usuários** no console do Firebase:
+
+![Usuários registrados no Firebase Authentication](docs/images/firebase-users.png)
+
 ## Tecnologias
 
 - Kotlin com layouts XML
