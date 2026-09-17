@@ -13,6 +13,7 @@
     <string name="hello_user">Olá, %1$s!</string>
     <string name="did_you_know">Você sabia?</string>
     <string name="new_fact">Outra curiosidade</string>
+    <string name="logout">Sair</string>
 
     <string-array name="fun_facts">
         <item>Polvos têm três corações e sangue azul.</item>
